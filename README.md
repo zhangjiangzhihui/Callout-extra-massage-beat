@@ -28,6 +28,8 @@
 
 Callout Extra Message 是一个为 Obsidian 的 Callout 功能增加额外备注功能的插件。它允许用户为每个 Callout 添加多条备注信息,并支持自定义 Callout 的样式和图标显示。
 ![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207195019.png)
+![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207200116.png)
+![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207200149.png)
 ## 基础功能
 
 ### Callout 备注功能
