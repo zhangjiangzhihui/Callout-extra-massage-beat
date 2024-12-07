@@ -27,7 +27,7 @@
 ## 插件简介
 
 Callout Extra Message 是一个为 Obsidian 的 Callout 功能增加额外备注功能的插件。它允许用户为每个 Callout 添加多条备注信息,并支持自定义 Callout 的样式和图标显示。
-
+![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207195019.png)
 ## 基础功能
 
 ### Callout 备注功能
@@ -49,6 +49,8 @@ Callout Extra Message 是一个为 Obsidian 的 Callout 功能增加额外备注
 4. **删除备注**
    - 在右侧面板中点击备注的"删除"按钮
    - 确认后即可删除该条备注
+  
+  ![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207195222.png)
 
 ### 快速转换文本
 
@@ -63,6 +65,9 @@ Callout Extra Message 是一个为 Obsidian 的 Callout 功能增加额外备注
    - 使用快捷键打开命令面板
    - 搜索并选择"将选中文本转换为 Callout"
    - 选择要使用的笔记类型
+
+![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207195501.png)
+
 
 ## 场景管理
 
@@ -83,6 +88,7 @@ Callout Extra Message 是一个为 Obsidian 的 Callout 功能增加额外备注
 1. 点击场景标签旁的删除按钮
 2. 确认删除操作
    > 注意：默认场景无法删除
+![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207195644.png)
 
 ### 复制场景配置
 
@@ -102,6 +108,7 @@ Callout Extra Message 是一个为 Obsidian 的 Callout 功能增加额外备注
    - Callout 名称
    - Callout 类型
    - 背景颜色
+  ![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207195733.png)
 
 ### 编辑笔记类型
 
@@ -133,13 +140,14 @@ Callout Extra Message 是一个为 Obsidian 的 Callout 功能增加额外备注
 1. 调整顶部间距（0-32 像素）
 2. 调整右侧间距（8-100 像素）
 3. 在预览区域查看效果
-
+![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207195800.png)
 ## 导出功能
 
 1. 在右侧面板中点击"导出笔记"按钮
 2. 在预览窗口中查看导出内容
 3. 确认后选择保存位置
 4. 导出为 PDF 文件
+![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207195957.png)
 
 ## 授权说明
 
@@ -152,4 +160,4 @@ Callout Extra Message 是一个为 Obsidian 的 Callout 功能增加额外备注
    - 输入有效的激活码
    - 点击激活按钮
    - 重启 Obsidian 后生效
-![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207195019.png)
+
