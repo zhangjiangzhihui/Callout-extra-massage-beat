@@ -152,4 +152,4 @@ Callout Extra Message 是一个为 Obsidian 的 Callout 功能增加额外备注
    - 输入有效的激活码
    - 点击激活按钮
    - 重启 Obsidian 后生效
-
+![image.png](https://zhangjiangchong.oss-cn-chengdu.aliyuncs.com/20241207195019.png)
