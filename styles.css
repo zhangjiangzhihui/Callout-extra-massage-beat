@@ -1,0 +1,793 @@
+/* Callout 消息图标样式 */
+.callout-message-icon {
+    opacity: 0.7;
+    transition: all 0.2s ease;
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--background-secondary);
+    position: absolute;
+    right: 0;
+}
+
+.callout-message-icon:hover {
+    opacity: 1;
+    background-color: var(--background-modifier-hover);
+}
+
+/* 消息列表视图样式 */
+.callout-messages-container {
+    padding: 16px;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.callout-message-item {
+    position: relative;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.callout-message-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.callout-message-content {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.callout-message-timestamp {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* 输入框 Modal 样式 */
+.message-input-modal {
+    padding: 16px;
+}
+
+.message-input-modal textarea {
+    width: 100%;
+    min-height: 120px;
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--background-modifier-border);
+    background: var(--background-primary);
+}
+
+.message-input-modal button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.message-input-modal button.mod-cta {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.message-input-modal button:not(.mod-cta) {
+    background: var(--background-modifier-border);
+    color: var(--text-normal);
+}
+
+.message-input-modal button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* 添加按钮容器样式 */
+.message-input-modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+/* 添加滚动条样式 */
+.callout-messages-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.callout-messages-container::-webkit-scrollbar-track {
+    background: var(--background-primary);
+}
+
+.callout-messages-container::-webkit-scrollbar-thumb {
+    background: var(--background-modifier-border);
+    border-radius: 4px;
+}
+
+.callout-messages-container::-webkit-scrollbar-thumb:hover {
+    background: var(--background-modifier-border-hover);
+}
+
+/* 视图按钮样式 */
+.callout-view-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.callout-view-buttons button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: var(--background-modifier-border);
+    color: var(--text-normal);
+}
+
+.callout-view-buttons button.mod-cta {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+/* 设置面板样式 */
+.callout-config-container {
+    background: var(--background-secondary);
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.callout-config-container h3 {
+    margin-top: 0;
+    color: var(--text-accent);
+}
+
+/* 消息卡片标题样式 */
+.callout-message-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* 空消息提示样式 */
+.callout-message-empty {
+    text-align: center;
+    padding: 32px;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* 删除按钮样式 */
+.callout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.delete-callout-button {
+    background: var(--background-modifier-error);
+    color: var(--text-on-accent);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.delete-callout-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* 优化消息卡片样式 */
+.callout-message-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: var(--background-primary);
+}
+
+.callout-message-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.callout-message-content {
+    padding: 8px 0;
+    white-space: pre-wrap;
+}
+
+/* 分隔线样式 */
+.callout-config-container + hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #ff6b6b, transparent);
+    margin: 24px 0;
+}
+
+/* 添加新 Callout 按钮样式 */
+.add-callout-button-container {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.add-callout-button-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* 优化消息卡片样式 */
+.callout-message-item {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    transition: all 0.2s ease;
+}
+
+.callout-message-timestamp {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: right;
+    margin-top: 8px;
+}
+
+/* Callout 选择弹窗样式 */
+.callout-selection-modal {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.callout-selection-modal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.callout-list {
+    display: grid;
+    gap: 12px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.callout-list-item {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.callout-list-item:hover {
+    transform: translateY(-2px);
+}
+
+.callout-preview {
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.callout-preview h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* 添加动画效果 */
+.callout-list-item {
+    animation: fade-in-up 0.3s ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 为每个项目添加延迟动画 */
+.callout-list-item:nth-child(1) { animation-delay: 0.1s; }
+.callout-list-item:nth-child(2) { animation-delay: 0.2s; }
+.callout-list-item:nth-child(3) { animation-delay: 0.3s; }
+.callout-list-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Callout 高亮效果 */
+.callout-highlight {
+    animation: highlight-pulse 2s ease-in-out;
+}
+
+@keyframes highlight-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(var(--interactive-accent-rgb), 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(var(--interactive-accent-rgb), 0); }
+    100% { box-shadow: 0 0 0 0 rgba(var(--interactive-accent-rgb), 0); }
+}
+
+/* 可点击的标题样式 */
+.callout-title-text {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 4px;
+}
+
+/* 编辑模式样式 */
+.callout-message-edit {
+    width: 100%;
+    min-height: 100px;
+    padding: 8px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    background: var(--background-primary);
+    font-family: inherit;
+    font-size: inherit;
+    resize: vertical;
+}
+
+/* 空状态消息样式 */
+.callout-message-empty {
+    text-align: center;
+    padding: 32px;
+    color: var(--text-muted);
+    font-style: italic;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    margin: 16px;
+}
+
+/* 优化消息列表容器样式 */
+.callout-messages-container {
+    height: calc(100% - 60px); /* 减去按钮区域的高度 */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 添加过渡动画 */
+.callout-message-item {
+    animation: fade-slide-in 0.3s ease-out;
+}
+
+@keyframes fade-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 添加遮罩层 */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+}
+
+/* 修改图标容器样式 */
+.callout-message-icon-container {
+    position: absolute;
+    top: 8px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+/* 消息数量样式 */
+.callout-message-count {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    padding: 0 4px;
+    position: absolute;
+    right: -20px;
+}
+
+/* 确保 Callout 有相对定位 */
+.markdown-preview-view .callout,
+.markdown-source-view .callout {
+    position: relative !important;
+}
+
+/* 添加编辑按钮样式 */
+.callout-message-edit-button {
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 8px;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.callout-message-edit-button:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+/* 按钮容器样式 */
+.callout-message-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+/* 删除按钮样式 */
+.callout-message-delete-button {
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--background-modifier-error);
+    color: var(--text-on-accent);
+    cursor: pointer;
+    font-size: 12px;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.callout-message-delete-button:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+/* 按钮容器样式 */
+.callout-view-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* 视图按钮行样式 */
+.view-buttons-row {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    flex-wrap: wrap;  /* 允许按钮换行 */
+}
+
+.view-buttons-row button {
+    flex: 1;
+    min-width: 120px;  /* 设置最小宽度 */
+    white-space: normal;  /* 允许文字换行 */
+    height: auto;  /* 高度自适应 */
+    padding: 8px;  /* 调整内边距 */
+    line-height: 1.4;  /* 调整行高 */
+    text-align: center;  /* 文字居中 */
+    word-wrap: break-word;  /* 允许长单词换行 */
+    hyphens: auto;  /* 启用自动连字符 */
+}
+
+/* 导出按钮行样式 */
+.export-button-row {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* 导出按钮样式 */
+.export-button {
+    width: 100%;
+    white-space: normal;  /* 允许文字换行 */
+    height: auto;
+    padding: 8px;
+    line-height: 1.4;
+    text-align: center;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.export-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* 导出预览模态框样式 */
+.export-preview-modal {
+    max-width: 800px;
+    max-height: 80vh;
+    padding: 20px;
+}
+
+.export-preview-wrapper {
+    overflow-y: auto;
+    max-height: calc(80vh - 100px);
+    padding: 20px;
+    margin-bottom: 20px;
+    background: var(--background-primary);
+    border-radius: 8px;
+}
+
+/* 预览中的 Callout 样式 */
+.export-preview-wrapper .callout {
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 4px;
+    border-left-width: 4px;
+    border-left-style: solid;
+}
+
+.export-preview-wrapper .callout-title {
+    margin: 0;
+    padding-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.export-preview-wrapper .callout-content {
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.export-preview-wrapper .callout-timestamp {
+    font-size: 0.8em;
+    color: #666;
+    text-align: right;
+    margin-top: 0.5em;
+}
+
+.export-preview-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.export-preview-buttons button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.export-preview-buttons button.mod-cta {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.export-preview-buttons button:not(.mod-cta) {
+    background: var(--background-modifier-border);
+    color: var(--text-normal);
+}
+
+.export-preview-buttons button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.scene-tabs-container {
+    display: flex;
+    flex-wrap: wrap;  /* 允许换行 */
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    max-height: 200px;  /* 限制最大高度 */
+    overflow-y: auto;  /* 超出高度时显示滚动条 */
+}
+
+.scene-tab-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;  /* 添加底部间距 */
+    min-width: 150px;  /* 设置最小宽度 */
+    max-width: calc(33.33% - 10px);  /* 每行最多显示3个，考虑间距 */
+}
+
+.scene-tab {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* 文字过长时显示省略号 */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+/* 添加滚动条样式 */
+.scene-tabs-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scene-tabs-container::-webkit-scrollbar-track {
+    background: var(--background-secondary);
+    border-radius: 3px;
+}
+
+.scene-tabs-container::-webkit-scrollbar-thumb {
+    background: var(--background-modifier-border);
+    border-radius: 3px;
+}
+
+.scene-tabs-container::-webkit-scrollbar-thumb:hover {
+    background: var(--background-modifier-border-hover);
+}
+
+.restart-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    border: 1px solid #4caf50;
+    text-align: center;
+}
+
+.restart-container p {
+    margin: 0 0 15px 0;
+    color: #2e7d32;
+}
+
+.restart-container button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.restart-container button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.restart-obsidian-button {
+    transition: all 0.2s ease;
+}
+
+.restart-obsidian-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* Callout Prism Styles - 只在启用时生效 */
+.use-callout-prism-style {
+    /* 将原来 callout prism.css 中的所有样式移到这里，
+       并修改选择器，确保只在启用时生效 */
+    
+    --callout-padding: 4px;
+    --callout-radius: var(--radius-m);
+    --callout-background-alpha: 20%;
+}
+
+.use-callout-prism-style .callout {
+    background-color: unset;
+    position: relative !important;
+}
+
+.use-callout-prism-style .callout-message-icon-container {
+    position: absolute !important;
+    top: 8px !important;
+    right: 16px !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    cursor: pointer !important;
+    pointer-events: all !important;
+    user-select: none !important;
+}
+
+/* 将 callout prism.css 中的其他所有样式都复制过来，
+   但在每个选择器前面加上 .use-callout-prism-style */
+
+/* ... 其他样式 ... */
+
+/* Callout 基础样式 */
+.callout {
+    position: relative;
+}
+
+/* 图标容器样式 */
+.callout-message-icon-container {
+    position: absolute;
+    top: var(--icon-top-position, 8px);
+    right: var(--icon-right-position, 8px);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* 图标样式 */
+.callout-message-icon {
+    width: var(--icon-size, 24px);
+    height: var(--icon-size, 24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 消息数量样式 */
+.callout-message-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-accent);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+}
+
+/* 悬停效果 */
+.callout-message-icon-container:hover {
+    opacity: 1;
+}
+
+/* 确保在 prism 样式下图标仍然可见 */
+.prism-callout .callout-message-icon-container {
+    display: flex !important;
+    z-index: 9999;
+}
+
+/* 默认隐藏图标 */
+.callout-message-icon-container {
+    display: none;
+}
+
+/* 当启用全局图标时显示 */
+.show-callout-icon .callout-message-icon-container {
+    display: flex;
+}
+
+/* 高亮动画效果 */
+.callout-highlight {
+    animation: highlight-pulse 2s ease-in-out;
+}
+
+@keyframes highlight-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(var(--text-accent-rgb), 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(var(--text-accent-rgb), 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(var(--text-accent-rgb), 0);
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "callout-extra-message",
+  "name": "Callout Extra Message",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "为 Obsidian 的 Callout 添加额外的备注功能",
+  "author": "一手烂牌打得稀烂",
+  "isDesktopOnly": false
+}
