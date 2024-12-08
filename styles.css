@@ -791,3 +791,20 @@
         box-shadow: 0 0 0 0 rgba(var(--text-accent-rgb), 0);
     }
 }
+
+/* 添加顶部栏样式 */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.toggle-edit-mode {
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.toggle-edit-mode:hover {
+    opacity: 0.8;
+}
